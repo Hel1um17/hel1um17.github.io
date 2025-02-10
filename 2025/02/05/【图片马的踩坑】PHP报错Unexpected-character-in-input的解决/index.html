@@ -19,22 +19,22 @@
   <meta name="author" content="Hel1um17">
   <meta name="keywords" content="">
   
-    <meta name="description" content="����������phpstudy��� Apache2.4.39 + PHP7.3.4 �������ļ���ΪĬ�� ��upload-labs��ϰ�У�����һ��ͼƬ���������Ͻ����������ϣ�PHP������˵ 1234Warning: Unexpected character in input: &#x27;&#x27; (ASCII&#x3D;28) state&#x3D;0">
+    <meta name="description" content="问题环境：phpstudy搭建的 Apache2.4.39 + PHP7.3.4 ，配置文件均为默认 在upload-labs练习中，传了一个图片马，但是蚁剑死活连不上，PHP还报错说 1234Warning: Unexpected character in input: &#x27;&#x27; (ASCII&#x3D;28) state&#x3D;0 in C:\Users\Hel1um17\Codes\loca">
 <meta property="og:type" content="article">
-<meta property="og:title" content="��ͼƬ���Ĳȿӡ�PHP����Unexpected character in input�Ľ��">
+<meta property="og:title" content="【图片马的踩坑】PHP报错Unexpected character in input的解决">
 <meta property="og:url" content="https://hel1um17.github.io/2025/02/05/%E3%80%90%E5%9B%BE%E7%89%87%E9%A9%AC%E7%9A%84%E8%B8%A9%E5%9D%91%E3%80%91PHP%E6%8A%A5%E9%94%99Unexpected-character-in-input%E7%9A%84%E8%A7%A3%E5%86%B3/index.html">
 <meta property="og:site_name" content="Hel1um17&#39;s Blog">
-<meta property="og:description" content="����������phpstudy��� Apache2.4.39 + PHP7.3.4 �������ļ���ΪĬ�� ��upload-labs��ϰ�У�����һ��ͼƬ���������Ͻ����������ϣ�PHP������˵ 1234Warning: Unexpected character in input: &#x27;&#x27; (ASCII&#x3D;28) state&#x3D;0">
+<meta property="og:description" content="问题环境：phpstudy搭建的 Apache2.4.39 + PHP7.3.4 ，配置文件均为默认 在upload-labs练习中，传了一个图片马，但是蚁剑死活连不上，PHP还报错说 1234Warning: Unexpected character in input: &#x27;&#x27; (ASCII&#x3D;28) state&#x3D;0 in C:\Users\Hel1um17\Codes\loca">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-02-05T02:13:53.000Z">
-<meta property="article:modified_time" content="2025-02-10T01:13:11.903Z">
+<meta property="article:modified_time" content="2025-02-10T01:21:11.816Z">
 <meta property="article:author" content="Hel1um17">
 <meta property="article:tag" content="Web">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>��ͼƬ���Ĳȿӡ�PHP����Unexpected character in input�Ľ�� - Hel1um17&#39;s Blog</title>
+  <title>【图片马的踩坑】PHP报错Unexpected character in input的解决 - Hel1um17&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -212,7 +212,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="��ͼƬ���Ĳȿӡ�PHP����Unexpected character in input�Ľ��"></span>
+            <span id="subtitle" data-typed-text="【图片马的踩坑】PHP报错Unexpected character in input的解决"></span>
           
         </div>
 
@@ -235,7 +235,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          77 字
+          306 字
         
       </span>
     
@@ -246,7 +246,7 @@
         
         
         
-          1 分钟
+          3 分钟
         
       </span>
     
@@ -283,21 +283,21 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">��ͼƬ���Ĳȿӡ�PHP����Unexpected character in input�Ľ��</h1>
+            <h1 id="seo-header">【图片马的踩坑】PHP报错Unexpected character in input的解决</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="����"><a href="#����" class="headerlink" title="����"></a>����</h1><p>������phpstudy��� <strong>Apache2.4.39</strong> + <strong>PHP7.3.4</strong> �������ļ���ΪĬ��</p>
-<p>��upload-labs��ϰ�У�����һ��ͼƬ���������Ͻ����������ϣ�PHP������˵</p>
-<figure class="highlight nix"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs nix"><span class="hljs-params">Warning:</span> Unexpected character <span class="hljs-keyword">in</span> <span class="hljs-params">input:</span> <span class="hljs-string">&#x27;&#x27; (ASCII=28) state=0 in C:<span class="hljs-char escape_">\U</span>sers<span class="hljs-char escape_">\H</span>el1um17<span class="hljs-char escape_">\C</span>odes<span class="hljs-char escape_">\l</span>ocalhost<span class="hljs-char escape_">\i</span>ndex.php on line 144</span><br><span class="hljs-string">Parse error: in C:<span class="hljs-char escape_">\U</span>sers<span class="hljs-char escape_">\H</span>el1um17<span class="hljs-char escape_">\C</span>odes<span class="hljs-char escape_">\l</span>ocalhost<span class="hljs-char escape_">\i</span>ndex.php on line 144</span><br><span class="hljs-string">//Ϊ�˷��������index.phpΪ�ҵ�ͼƬ������ʱΪ�������Լ�����</span><br><span class="hljs-string">//ʵ������ǣ�����auto_prepend_file��ͼƬ������readme.php�У��Ͻ�����readme.php</span><br></code></pre></td></tr></table></figure>
-<h1 id="���"><a href="#���" class="headerlink" title="���"></a>���</h1><p>�Աȱ�����ÿһ�з��ַ��֣�ÿ�ж��������ɸ� <strong>&lt;?</strong><br>����ɾȥ���Ͻ�������������</p>
-<h1 id="����-1"><a href="#����-1" class="headerlink" title="����"></a>����</h1><p>��ƽʱ��ʦ���ǵ���ƵҲû��˵���⽫ <strong>&lt;?</strong> ȥ��</p>
-<p>ֻ��ֱ�����ļ�ĩβ�����˺��Ŵ��룬Ҳ�������ӳɹ�</p>
-<p>��û�ж���ʦ�����Խ��һ�£����ѽ����</p>
-<h1 id="���-1"><a href="#���-1" class="headerlink" title="���"></a>���</h1><p>�Һ���ȥStack Overflow����<a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/79411834/i-cant-connect-my-webshell-in-file-upload-vulnerability">�������</a></p>
-<p>C3roe ����˵�� <strong>php.ini</strong> �������� <strong>short_open_tag&#x3D;On</strong> ʱ��� <strong>&lt;?</strong> ����PHP����Ŀ�ͷ�Ӷ���ʼ�������ҽ� <strong>short_open_tag</strong> ����Ϊ�� <strong>OFF</strong> ��û�б�����</p>
-<p>��������Ӣ�����û����������ü�����Ͷ�˲��ʺϻش��ҾͰ�����ɾ�ˣ��n�����������Ǹ�л�����</p>
+                <h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>环境：phpstudy搭建的 <strong>Apache2.4.39</strong> + <strong>PHP7.3.4</strong> ，配置文件均为默认</p>
+<p>在upload-labs练习中，传了一个图片马，但是蚁剑死活连不上，PHP还报错说</p>
+<figure class="highlight nix"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs nix"><span class="hljs-params">Warning:</span> Unexpected character <span class="hljs-keyword">in</span> <span class="hljs-params">input:</span> <span class="hljs-string">&#x27;&#x27; (ASCII=28) state=0 in C:<span class="hljs-char escape_">\U</span>sers<span class="hljs-char escape_">\H</span>el1um17<span class="hljs-char escape_">\C</span>odes<span class="hljs-char escape_">\l</span>ocalhost<span class="hljs-char escape_">\i</span>ndex.php on line 144</span><br><span class="hljs-string">Parse error: in C:<span class="hljs-char escape_">\U</span>sers<span class="hljs-char escape_">\H</span>el1um17<span class="hljs-char escape_">\C</span>odes<span class="hljs-char escape_">\l</span>ocalhost<span class="hljs-char escape_">\i</span>ndex.php on line 144</span><br><span class="hljs-string">//为了方便起见，index.php为我的图片马，此时为后来我自己测试</span><br><span class="hljs-string">//实际情况是，用了auto_prepend_file将图片包含在readme.php中，蚁剑连接readme.php</span><br></code></pre></td></tr></table></figure>
+<h1 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h1><p>对比报错的每一行发现发现，每行都含有若干个 <strong>&lt;?</strong><br>将其删去后蚁剑可以正常连接</p>
+<h1 id="疑问"><a href="#疑问" class="headerlink" title="疑问"></a>疑问</h1><p>但平时看师傅们的视频也没有说特意将 <strong>&lt;?</strong> 去掉</p>
+<p>只是直接在文件末尾加上了后门代码，也可以连接成功</p>
+<p>有没有懂的师傅可以解答一下？（已解决）</p>
+<h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><p>我后来去Stack Overflow问了<a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/79411834/i-cant-connect-my-webshell-in-file-upload-vulnerability">这个问题</a></p>
+<p>C3roe 大佬说在 <strong>php.ini</strong> 中设置了 <strong>short_open_tag&#x3D;On</strong> 时会把 <strong>&lt;?</strong> 当成PHP代码的开头从而开始解析。我将 <strong>short_open_tag</strong> 设置为了 <strong>OFF</strong> 就没有报错了</p>
+<p>不过我那英语可能没表述清楚，让几个人投了不适合回答，我就把问题删了＞﹏＜，不过还是感谢歪果仁</p>
 
                 
               </div>
@@ -316,7 +316,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%EF%BF%BDs%EF%BF%BD/" class="category-chain-item">�ȿ�</a>
+  <a href="/categories/%E8%B8%A9%E5%9D%91/" class="category-chain-item">踩坑</a>
   
   
 
@@ -343,7 +343,7 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>��ͼƬ���Ĳȿӡ�PHP����Unexpected character in input�Ľ��</div>
+      <div>【图片马的踩坑】PHP报错Unexpected character in input的解决</div>
       <div>https://hel1um17.github.io/2025/02/05/【图片马的踩坑】PHP报错Unexpected-character-in-input的解决/</div>
     </div>
     <div class="license-meta">
@@ -388,9 +388,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/02/07/%E3%80%90CTF%E7%AC%94%E8%AE%B0%E3%80%91%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BC%8F%E6%B4%9E/" title="��CTF�ʼǡ��ļ��ϴ�©��">
+                      <a href="/2025/02/07/%E3%80%90CTF%E7%AC%94%E8%AE%B0%E3%80%91%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BC%8F%E6%B4%9E/" title="【CTF笔记】文件上传漏洞">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">��CTF�ʼǡ��ļ��ϴ�©��</span>
+                        <span class="hidden-mobile">【CTF笔记】文件上传漏洞</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -398,8 +398,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/11/24/%E3%80%90CTF%E6%AF%94%E8%B5%9B%E3%80%912024%E9%9D%92%E5%B0%91%E5%B9%B4%E5%BC%BA%E7%BD%91%E6%9D%AFWP/" title="��CTF������2024������ǿ����WP">
-                        <span class="hidden-mobile">��CTF������2024������ǿ����WP</span>
+                      <a href="/2024/11/24/%E3%80%90CTF%E6%AF%94%E8%B5%9B%E3%80%912024%E9%9D%92%E5%B0%91%E5%B9%B4%E5%BC%BA%E7%BD%91%E6%9D%AFWP/" title="【CTF比赛】2024青少年强网杯WP">
+                        <span class="hidden-mobile">【CTF比赛】2024青少年强网杯WP</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
